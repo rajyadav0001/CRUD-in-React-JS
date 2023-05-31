@@ -12,7 +12,7 @@
     position: static;
  }
  .main{
-   margin: 8% 15%;
+   margin: 8% 21%;
  }
  .form{
    display: flex;
@@ -20,5 +20,10 @@
  }
  .h1{
    text-align: center;
-   margin-bottom: 20px;
+   margin-bottom: 40px;
+ }
+ .thead{
+   background-color:gray;
+   color: white;
+   font-weight: 500;
  }
