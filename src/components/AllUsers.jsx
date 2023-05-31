@@ -15,7 +15,7 @@ const AllUsers = () => {
   const getUsersDetails = async () =>{
       let response = await getUsers();
       setUsers(response.data);
-      console.log(users);
+    //   console.log(users);
 
   }
   const deleteUserData = async (id) =>{

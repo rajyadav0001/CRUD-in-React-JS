@@ -14,7 +14,7 @@ const AddUsers = () => {
   })
   const handleInput =(e)=>{
      setUser({...user,[e.target.name]:e.target.value});
-     console.log(user);
+    //  console.log(user);
   }
   const addUserDetails = async ()=>{
        await addUser(user);
