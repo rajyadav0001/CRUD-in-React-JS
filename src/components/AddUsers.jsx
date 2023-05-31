@@ -14,8 +14,9 @@ const AddUsers = () => {
      setUser({...user,[e.target.name]:e.target.value});
      console.log(user);
   }
-  const addUserDetails =()=>{
-       addUser(user);
+  const addUserDetails = async ()=>{
+       await addUser(user);
+       
   }
   return (
     <div className='main'>
