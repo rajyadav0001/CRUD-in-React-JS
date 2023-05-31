@@ -1,32 +1,3 @@
 {
-  "users": [
-    {
-      "name": "Rajnesh Yadav",
-      "username": "rajyadav0001",
-      "email": "rajyadav@gamil.com",
-      "phone": "9898989898",
-      "id": 1
-    },
-    {
-      "name": "Rajnesh Kumar",
-      "username": "rajyadav0001",
-      "email": "rajneshsbl9536@gmail.com",
-      "phone": "+919548690884",
-      "id": 2
-    },
-    {
-      "name": "Rajnesh Kumar",
-      "username": "rajyadav0001",
-      "email": "rajneshsbl9536@gmail.com",
-      "phone": "+919548690884",
-      "id": 3
-    },
-    {
-      "name": "Rajnesh Kumar",
-      "username": "raj",
-      "email": "rajneshsbl9536@gmail.com",
-      "phone": "+919548690884",
-      "id": 4
-    }
-  ]
+  "users": []
 }

@@ -1,6 +1,6 @@
 import { Button, Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material'
 import React, { useEffect, useState } from 'react';
-import { getUsers } from '../service/api';
+import { deleteUser, getUsers } from '../service/api';
 import '../App.css';
 import { Link } from 'react-router-dom';
 
@@ -18,6 +18,10 @@ const AllUsers = () => {
       console.log(users);
 
   }
+  const deleteUserData = async (id) =>{
+      await deleteUser(id);
+      getUsersDetails();
+  } 
   return (
     <div className='allUsers'>
       <h1 className='h1'>All Users list</h1>
@@ -47,7 +51,7 @@ const AllUsers = () => {
                           <Button variant="contained" component={Link} to={`/edit/${user.id}`}>Edit</Button>
                       </TableCell>
                       <TableCell>
-                          <Button variant='contained' color="secondary">Delete</Button>
+                          <Button variant='contained' color="secondary" onClick={()=>deleteUserData(user.id)}>Delete</Button>
                       </TableCell>
                   </TableRow>
               ))

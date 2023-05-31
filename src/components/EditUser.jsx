@@ -1,7 +1,7 @@
 import { Button, FormControl, FormGroup, Input, InputLabel } from '@mui/material'
 import React, { useState,useEffect } from 'react';
 import '../App.css';
-import { getUser } from '../service/api';
+import { getUser, editUser } from '../service/api';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const EditUser = () => {
@@ -25,8 +25,8 @@ const EditUser = () => {
      console.log(user);
   }
   const addUserDetails = async ()=>{
-    //    await addUser(user);
-    //    navigate('/allUsers');
+       await editUser(user,id);
+       navigate('/allUsers');
   }
   return (
     <div className='main'>
